@@ -1,0 +1,172 @@
+*{
+    text-decoration: none;
+}
+/*------------------------------------------------------PAGE D'IDENTIFICATION------------------------------------------------*/
+
+#divbg{
+    background-image: url('/image/Authbg.jpg');
+    background-size: cover;
+}
+#nameapp h4{
+    color: #fff;
+     font-size:50px;
+     font-family: Script MT;
+}
+.card{
+    border: none;
+    box-shadow: 10px -10px 70px rgba(0, 0, 0, 0.3);
+}
+.card .card-header{
+    background-color: #fff;
+    border: none;
+}
+.card .card-body{
+    margin-left:20px;
+    margin-right:20px;
+    background-color: #fff;
+    border: none;
+}
+.card .card-footer{
+    background-color: #fff;
+    border: none;
+}
+
+/*------------------------------------------------------SIDE BARE---------------------------------------------------------*/
+
+#bodyadmin{
+    background-color: #d1d1d1;
+}
+.page .sidebar{
+    height: 100vh;
+    width: 250px;
+    background-color: #063331;
+    top: 0;
+    left: 0;
+    position: fixed;
+    overflow-x: hidden;          /*curseur horizontal*/
+    overflow-y: auto;           /*curseur vertical*/
+    transition: all 0.8s ease; /*met une transition de 0.8 seconde*/
+}
+body.active .page .sidebar{
+    left: -250px;             /*enlève la side barre une fois que le js a passé la classe:"active" à la balise body*/
+}
+.sidebar-hader{
+    padding: 10px 15px;
+    background-color: #03968e;
+}
+.sidebar-logo-container{
+    padding-left:20px;
+}
+#logo{
+    color: #fff;
+     font-size:50px;
+     font-family: Script MT;
+}
+.navigation-list{
+    list-style-type: none;
+    padding: 0px 18px;
+}
+.navigation-list-item{
+    padding: 10px 18px 10px 18px;
+    border-radius: 8px;
+    margin: 15px 0px;
+}
+.navigation-list-item:hover {
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 0.4em rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+}
+.navigation-list-item.active {
+    background: rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 0.4em rgba(255, 255, 255, 0.1);
+}
+.navigation-link{
+    color: white;
+    letter-spacing: O.5px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+/********************************************SOUS MENU SIDEBAR***************************************/
+
+.conten-sous-list{
+    padding-left: 160px;
+    position: fixed;
+}
+.navigation-list-item .sous-navigation-list
+{
+    color: white;
+	display:none;
+}
+.navigation-list li:hover .sous-navigation-list{
+    display: block;
+}
+.navigation-list-item:hover .navigation-link {
+    color: white;
+}
+.sous-navigation-list li{
+    width:100%;
+    text-align:center;
+    background-color: #0c524e;
+    padding: 10px 18px 10px 18px;
+}
+.sous-navigation-list li a{
+    color: white;
+    letter-spacing: O.5px;
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+/***************************************************** CONTENT ***********************************************/
+
+.page .content{
+    /*position: fixed;*/
+    margin-left:250px;
+    transition: all 0.8s ease; /*met une transition de 0.8 seconde*/
+}
+body.active .page .content{
+    margin-left: 0;
+    width: 100%;              /*demande a la partie content d'occuper 100% la page une fois que le js a passé la classe:"active" à la balise body*/
+  }
+
+/*******************************************************NAVBAR DANS CONTENT *****************************************/
+
+.navbar{
+    height: 88px;
+    background-color: #215856;
+}
+button.sidebarToggle{
+    background-color: #215856;
+    color: white;
+}
+button.btn-outline-success{
+    background-color: #215856;
+    color: white;
+    border: none;
+}
+
+/*******************************************ELEMENTS SOUS LA NAVBAR***************************************************/
+
+.content #sousnavbar{
+    background-color: white;
+    height: 60px;
+    padding-top: 17px;
+    box-shadow: 10px -10px 70px rgba(0, 0, 0, 0.3);
+}
+.content #sousnavbar .col-6{
+    font-weight: 600;
+    font-size: 20px;
+}
+#btn{
+    margin-left:1220px;
+    margin-top:500px;
+    position: fixed;
+    box-shadow: 0 0 0.4em rgba(3, 3, 3, 0.1);
+}
+.page .content-head{
+    margin-left:290px;
+    margin-top: 40px;
+    background-color: #fff;
+    margin-right:40px;
+}
